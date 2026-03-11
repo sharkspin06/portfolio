@@ -5,7 +5,7 @@ const Projects = () => {
       subtitle: 'Book Checkout System',
       description: 'Books2Go is a user-friendly system designed to streamline the process of borrowing and returning books. It allows users to search for available books, check them out, and manage their borrowing history, while administrators can easily track inventory and oversee user activity.',
       image: '/books2go.png',
-      link: 'https://books2go-project.com'
+      link: 'https://lightgoldenrodyellow-ram-782285.hostingersite.com/'
     },
     {
       title: 'Citizens Charter',
