@@ -6,19 +6,7 @@ const About = () => {
       title: 'INTERN @ DEPARTMENT OF EDUCATION SDO SAN JOSE CITY',
       description: 'Assisted in developing and maintaining official websites for the SDO. Worked with a team to troubleshoot and improve site functionality. Gained practical experience in HTML, CSS, JavaScript, and PHP.',
       image: '/role1.png'
-    },
-    {
-      title: 'UX DESIGNER @ COMPANY NAME',
-      description: 'About 4 sentences or so describing things you worked on and what you were able to achieve in this role.',
-      placeholder: 'Role 2',
-      image: undefined
-    },
-    {
-      title: 'UX DESIGNER @ COMPANY NAME',
-      description: 'About 4 sentences or so describing things you worked on and what you were able to achieve in this role.',
-      placeholder: 'Role 3',
-      image: undefined
-    },
+    }
   ]
 
   const timeline: { role: string; company: string }[] = []
@@ -39,22 +27,18 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {roles.map((role, index) => (
-              <div key={index} className="space-y-4">
-                {/* Image or placeholder */}
-                {role.image ? (
+              <div key={index} className="group space-y-4 p-6 rounded-xl hover:bg-white hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                {/* Image */}
+                <div className="overflow-hidden rounded-lg mb-6">
                   <img 
                     src={role.image} 
                     alt={role.title}
-                    className="w-full aspect-[4/3] object-cover rounded-lg mb-6"
+                    className="w-full aspect-[4/3] object-cover rounded-lg transform group-hover:scale-110 transition-transform duration-700"
                   />
-                ) : (
-                  <div className="w-full aspect-[4/3] bg-gray-200 flex items-center justify-center text-gray-500 text-sm mb-6">
-                    {role.placeholder}
-                  </div>
-                )}
+                </div>
                 
                 {/* Role title */}
-                <h3 className="text-xs sm:text-sm font-bold text-navy-900 uppercase tracking-wide">
+                <h3 className="text-xs sm:text-sm font-bold text-navy-900 uppercase tracking-wide group-hover:text-blue-600 transition-colors duration-300">
                   {role.title}
                 </h3>
                 
