@@ -12,7 +12,7 @@ const Projects = () => {
       subtitle: 'Service Management System',
       description: 'Citizens Charter is a digital service management system that helps streamline government or public service operations. It allows citizens to view available services, submit requests, and track their status. Administrators can manage service listings, handle incoming requests, and improve service delivery transparency and efficiency.',
       image: '/citizenscharter.png',
-      link: 'https://citizens-charter-project.com'
+      link: 'https://white-gazelle-641091.hostingersite.com/'
     }
   ]
 
