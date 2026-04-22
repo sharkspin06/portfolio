@@ -27,6 +27,13 @@ const Projects = () => {
       description: 'Matchflix is a unique dating application built with TypeScript that connects people through their shared love of films. Users can match with others based on their movie preferences, creating meaningful connections through cinematic tastes.',
       image: '/matchflix.png',
       link: 'https://matchflix-frontend.vercel.app/'
+    },
+    {
+      title: 'Weather Monitoring System',
+      subtitle: 'IoT Project with Python & Raspberry Pi',
+      description: 'A commissioned weather monitoring and sensor system built using Python and Raspberry Pi. The system collects real-time environmental data including temperature, humidity, and atmospheric pressure, providing accurate weather monitoring capabilities.',
+      image: '/weathering.png',
+      link: ''
     }
   ]
 
@@ -69,16 +76,18 @@ const Projects = () => {
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                   {project.description}
                 </p>
-                <div className="pt-4">
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block px-6 py-3 bg-navy-900 hover:bg-navy-800 text-white font-medium rounded-lg transition-colors duration-300"
-                  >
-                    View Project →
-                  </a>
-                </div>
+                {project.link && (
+                  <div className="pt-4">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-6 py-3 bg-navy-900 hover:bg-navy-800 text-white font-medium rounded-lg transition-colors duration-300"
+                    >
+                      View Project →
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           ))}
