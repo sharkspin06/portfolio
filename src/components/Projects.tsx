@@ -34,6 +34,13 @@ const Projects = () => {
       description: 'A commissioned weather monitoring and sensor system built using Python and Raspberry Pi. The system collects real-time environmental data including temperature, humidity, and atmospheric pressure, providing accurate weather monitoring capabilities.',
       image: '/weathering.png',
       link: ''
+    },
+    {
+      title: 'Pet Care Tracker',
+      subtitle: 'Pet Management Application',
+      description: 'Pet Care Tracker is a comprehensive application built with React.js that helps pet owners manage their pets\' health and daily care routines. Track feeding schedules, vet appointments, medications, and important milestones all in one convenient place.',
+      image: '/petcare.png',
+      link: 'https://petcare-tracker.vercel.app/'
     }
   ]
 
