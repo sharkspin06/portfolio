@@ -13,6 +13,13 @@ const Projects = () => {
       description: 'Citizens Charter is a digital service management system that helps streamline government or public service operations. It allows citizens to view available services, submit requests, and track their status. Administrators can manage service listings, handle incoming requests, and improve service delivery transparency and efficiency.',
       image: '/citizenscharter.png',
       link: 'https://white-gazelle-641091.hostingersite.com/'
+    },
+    {
+      title: 'Snake Game',
+      subtitle: 'Interactive Game Built with React & Firebase',
+      description: 'A classic Snake Game created using React and Firebase. Features smooth gameplay mechanics, score tracking, and real-time leaderboard functionality. Built to demonstrate proficiency in React state management and Firebase integration.',
+      image: '/snake.png',
+      link: 'https://snakegame-ni-pj.vercel.app/'
     }
   ]
 
