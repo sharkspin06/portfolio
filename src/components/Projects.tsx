@@ -20,6 +20,13 @@ const Projects = () => {
       description: 'A classic Snake Game created using React and Firebase. Features smooth gameplay mechanics, score tracking, and real-time leaderboard functionality. Built to demonstrate proficiency in React state management and Firebase integration.',
       image: '/snake.png',
       link: 'https://snakegame-ni-pj.vercel.app/'
+    },
+    {
+      title: 'Matchflix',
+      subtitle: 'Dating App Based on Film Preferences',
+      description: 'Matchflix is a unique dating application built with TypeScript that connects people through their shared love of films. Users can match with others based on their movie preferences, creating meaningful connections through cinematic tastes.',
+      image: '/matchflix.png',
+      link: 'https://matchflix-frontend.vercel.app/'
     }
   ]
 
