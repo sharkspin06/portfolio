@@ -17,7 +17,7 @@ function App() {
       <main>
         <Hero />
         <About />
-        {/* <Languages /> */}
+        <Languages />
         <Projects />
         <OutsideWork />
         <Skills />
