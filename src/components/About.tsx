@@ -87,7 +87,7 @@ const About = () => {
                   <ul className="text-sm sm:text-base text-gray-600 leading-relaxed space-y-2 list-disc list-inside">
                     <li>Assisted in developing and maintaining official websites for the SDO</li>
                     <li>Worked with a team to troubleshoot and improve site functionality</li>
-                    <li>Gained practical experience in HTML, CSS, JavaScript, and PHP</li>
+                    <li>Gained practical experience in HTML,   CSS, JavaScript, and PHP</li>
                   </ul>
                 </div>
               </div>

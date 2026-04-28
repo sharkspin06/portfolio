@@ -1,53 +1,83 @@
+import { Button } from '@mui/material'
+import { ArrowForward, Download } from '@mui/icons-material'
+
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center px-6 sm:px-12 lg:px-24 overflow-hidden">
-      {/* Video Background */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-30"
-      >
-        <source src="/hero.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      {/* Image Background */}
+      <div 
+        className="absolute inset-0 w-full h-full bg-cover bg-center"
+        style={{ backgroundImage: 'url(/me.jpg)' }}
+      ></div>
       
       {/* Background overlay for additional control */}
-      <div className="absolute inset-0 bg-gray-50/60"></div>
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto w-full py-20">
         {/* Small label */}
-        <p className="text-xs sm:text-sm text-gray-600 uppercase tracking-widest mb-8 sm:mb-12">
+        <p className="text-sm sm:text-base text-white uppercase tracking-widest mb-2 sm:mb-3 mt-18">
           Hello, I'm
         </p>
         
         {/* Large name heading */}
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-navy-900 mb-6 sm:mb-8 leading-tight">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 sm:mb-8 leading-tight">
           PJ VALENCIA 
         </h1>
         
         {/* Subtitle */}
-        <p className="text-xl sm:text-2xl md:text-3xl text-navy-900 font-normal mb-12">
-          PROJECT PORTFOLIO
+        <p className="text-xl sm:text-2xl md:text-3xl text-white font-normal mb-12">
+          WELCOME TO MY PORTFOLIO
         </p>
         
         {/* CTA Buttons */}
         <div className="flex flex-wrap gap-4">
-          <a
+          <Button
+            variant="contained"
+            size="large"
+            endIcon={<ArrowForward />}
             href="#projects"
-            className="inline-block px-8 py-4 bg-navy-900 text-white font-medium rounded-lg hover:bg-blue-600 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            sx={{
+              backgroundColor: '#1e293b',
+              color: 'white',
+              px: 4,
+              py: 2,
+              fontSize: '1rem',
+              fontWeight: 500,
+              textTransform: 'none',
+              borderRadius: 2,
+              '&:hover': {
+                backgroundColor: '#2563eb',
+                transform: 'scale(1.05)',
+              },
+              transition: 'all 0.3s ease',
+            }}
           >
-            View My Work →
-          </a>
-          <a
+            View My Work
+          </Button>
+          <Button
+            variant="contained"
+            size="large"
+            endIcon={<Download />}
             href="/resume.pdf"
             download="PJ_Valencia_Resume.pdf"
-            className="inline-block px-8 py-4 bg-white border-2 border-navy-900 text-navy-900 font-medium rounded-lg hover:bg-navy-900 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            sx={{
+              backgroundColor: '#1e293b',
+              color: 'white',
+              px: 4,
+              py: 2,
+              fontSize: '1rem',
+              fontWeight: 500,
+              textTransform: 'none',
+              borderRadius: 2,
+              '&:hover': {
+                backgroundColor: '#2563eb',
+                transform: 'scale(1.05)',
+              },
+              transition: 'all 0.3s ease',
+            }}
           >
-            Download Resume ↓
-          </a>
+            Download Resume
+          </Button>
         </div>
       </div>
     </section>

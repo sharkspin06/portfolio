@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Hero from './components/Hero'
 import About from './components/About'
+import Languages from './components/Languages'
 import Projects from './components/Projects'
 import OutsideWork from './components/OutsideWork'
 import Skills from './components/Skills'
@@ -16,6 +17,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        {/* <Languages /> */}
         <Projects />
         <OutsideWork />
         <Skills />
