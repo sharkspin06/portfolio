@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const Projects = () => {
   const projects = [
     {
@@ -57,7 +59,7 @@ const Projects = () => {
         </h2>
 
         <div className="space-y-16">
-          {projects.map((project, index) => (
+          {projects.slice(0, 3).map((project, index) => (
             <div key={index} className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
               {/* Project image */}
               {project.image.startsWith('/') ? (
@@ -98,6 +100,16 @@ const Projects = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* View All Projects Button */}
+        <div className="mt-16 text-center">
+          <Link
+            to="/projects"
+            className="inline-block px-8 py-4 bg-navy-900 hover:bg-blue-600 text-white font-medium text-lg rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl"
+          >
+            View All Projects →
+          </Link>
         </div>
       </div>
     </section>
