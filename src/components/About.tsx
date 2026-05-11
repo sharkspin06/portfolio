@@ -112,6 +112,14 @@ const About = () => {
                 </h4>
                 <div className="space-y-4">
                   <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                    <strong>AWS Cloud Practitioner Essentials</strong><br />
+                    AWS Training & Certification | 2026
+                  </div>
+                  <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                    <strong>AI Engineer Bootcamp</strong><br />
+                    Udemy | 2026
+                  </div>
+                  <div className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     <strong>Computer Systems Servicing NC II</strong><br />
                     TESDA | 2019
                   </div>
